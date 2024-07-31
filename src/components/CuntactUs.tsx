@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
+import AnimatedSection from './AnimatedSection';
 
 const ContactSchema = Yup.object().shape({
   from_name: Yup.string().required('Required'),
@@ -13,7 +14,9 @@ const ContactUs: React.FC = () => {
   const [successMessage, setSuccessMessage] = useState('');
 
   return (
-    <div className="flex flex-col sm:flex-row items-center py-12 w-full">
+    <div id='Contact' >
+      <AnimatedSection>
+      <div className="flex flex-col sm:flex-row items-center py-12 w-full">
       <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
         <div className="text-center md:ml-6 w-full">
           <h2 className="text-2xl xs:text-3xl md:text-5xl font-bold my-2">Get in Touch</h2>
@@ -67,6 +70,8 @@ const ContactUs: React.FC = () => {
           )}
         </Formik>
       </div>
+      </div>
+      </AnimatedSection>
     </div>
   );
 };

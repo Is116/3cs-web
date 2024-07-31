@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
+import AnimatedSection from "./AnimatedSection";
 
 interface RatingProps {
     rating: number;
@@ -83,16 +84,18 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ testimonial }) => (
     </div>
 );
 
-const Testimonials: React.FC = () => (
-    <section className="py-14 md:py-24 bg-white text-center">
-        <h2 className="text-3xl md:text-5xl font-bold my-2">Client Success Stories</h2>
-        <p className="text-md mb-4">Explore how our cutting-edge software solutions have empowered businesses to innovate and grow.</p>
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8">
-            {testimonialList.map((testimonial, i) => (
-                <TestimonialItem key={i} testimonial={testimonial} />
-            ))}
-        </div>
-    </section>
+const Testimonials = () => (
+    <AnimatedSection>
+        <section className="py-14 md:py-24 bg-white text-center">
+            <h2 className="text-3xl md:text-5xl font-bold my-2">Client Success Stories</h2>
+            <p className="text-md mb-4">Explore how our cutting-edge software solutions have empowered businesses to innovate and grow.</p>
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8">
+                {testimonialList.map((testimonial, i) => (
+                    <TestimonialItem key={i} testimonial={testimonial} />
+                ))}
+            </div>
+        </section>
+    </AnimatedSection>
 );
 
 export default Testimonials;
