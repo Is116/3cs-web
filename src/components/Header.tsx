@@ -48,7 +48,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-6 left-0 right-0 z-50  bg-white backdrop-blur-sm m-5 shadow-2xl mx-12  ${
+      className={`fixed top-6 left-0 right-0 z-50  bg-white m-5 shadow-2xl mx-12  ${
         isHideOnMobileVisible ? "bg-opacity-100 rounded-lg" : "bg-opacity-80 rounded-full"
       } bg-opacity-20`}
       id="header"
@@ -66,7 +66,7 @@ export default function Header() {
             {navigationLinks.map((link, index) => (
               <a
                 key={index}
-                className={`m-1 py-2 text-sm font-semibold rounded-lg text-center text-white hover:text-gray-200 scroll-link`}
+                className={`m-1 py-2 text-sm font-semibold rounded-lg text-center text-gray-900 hover:text-gray-700 scroll-link`}
                 style={{ width: isHideOnMobileVisible ? "150px" : "110px" }}
                 href={link.url}
               >
