@@ -49,7 +49,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-6 left-0 right-0 z-50 bg-opacity-10 backdrop-blur-md m-5 shadow-2xl mx-12  ${
-        isHideOnMobileVisible ? "bg-opacity-100 rounded-lg" : "bg-opacity-80 rounded-full"
+        isHideOnMobileVisible ? " rounded-lg" : "rounded-full"
       } bg-opacity-20`}
       id="header"
     >
