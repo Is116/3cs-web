@@ -4,7 +4,7 @@ This is a company portfolio single-page application built with React + TSX , and
 
 ## Features
 
-- **React & TSX Vita**: Utilized for building the user interface.
+- **React & TSX: Utilized for building the user interface.
 - **Framer Motion**: Used for adding smooth animations.
 - **EmailJS**: Integrated for handling form submissions.
 - **Yup & Formik**: Used for form validation and management.
