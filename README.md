@@ -13,4 +13,4 @@ This is a company portfolio single-page application built with React + TSX , and
 
 The contact form uses EmailJS to handle form submissions. You will need to set up your EmailJS account and add your user ID to the 
 
-![Screenshot 1](3cs-web/src/assets/images/screenshots/screen1.jpeg)
+![Screenshot 1](src/assets/images/screenshots/screen1.jpeg)
