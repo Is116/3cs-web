@@ -15,6 +15,7 @@ const ContactUs: React.FC = () => {
 
   return (
     <div id='Contact' >
+      <AnimatedSection>
       <div className="flex flex-col sm:flex-row items-center py-12 w-full">
       <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
         <div className="text-center md:ml-6 w-full">
@@ -23,7 +24,6 @@ const ContactUs: React.FC = () => {
         </div>
       </div>
       <div className="w-full lg:w-1/2 justify-center items-center">
-      <AnimatedSection>
         <Formik
           initialValues={{ from_name: '', from_email: '', message: '' }}
           validationSchema={ContactSchema}
@@ -69,9 +69,9 @@ const ContactUs: React.FC = () => {
             </Form>
           )}
         </Formik>
-        </AnimatedSection>
       </div>
       </div>
+      </AnimatedSection>
     </div>
   );
 };
