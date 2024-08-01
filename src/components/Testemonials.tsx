@@ -85,17 +85,17 @@ const TestimonialItem: React.FC<TestimonialItemProps> = ({ testimonial }) => (
 );
 
 const Testimonials = () => (
-    <AnimatedSection>
         <section className="py-14 md:py-24 bg-white text-center">
-            <h2 className="text-3xl md:text-5xl font-bold my-2">Client Success Stories</h2>
-            <p className="text-md mb-4">Explore how our cutting-edge software solutions have empowered businesses to innovate and grow.</p>
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8">
-                {testimonialList.map((testimonial, i) => (
-                    <TestimonialItem key={i} testimonial={testimonial} />
-                ))}
-            </div>
+                <h2 className="text-3xl md:text-5xl font-bold my-2">Client Success Stories</h2>
+                <p className="text-md mb-4">Explore how our cutting-edge software solutions have empowered businesses to innovate and grow.</p>
+                <AnimatedSection>
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8">
+                        {testimonialList.map((testimonial, i) => (
+                            <TestimonialItem key={i} testimonial={testimonial} />
+                        ))}
+                    </div>
+                </AnimatedSection>
         </section>
-    </AnimatedSection>
 );
 
 export default Testimonials;
